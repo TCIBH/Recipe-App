@@ -17,7 +17,6 @@ constructor(private recipeService:RecipeService,
   private router:Router
 ){};
 ngOnInit(){
-  //const id=this.route.snapshot.params['id'];
   this.route.params.subscribe(
     (param:Params)=>{
         this.id = +param['id'];
